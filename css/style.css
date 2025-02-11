@@ -1,0 +1,144 @@
+/*Feel free to remove these styles or customise in your own stylesheet 👍 */
+* {
+  box-sizing: border-box;
+
+  font-size: 15px;
+  font-family: "Poppins", serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+
+body * {
+  color: hsl(229, 6%, 66%);
+}
+
+main {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+
+  color: hsl(234, 12%, 34%);
+}
+
+.primary-title {
+  font-weight: 200;
+}
+
+main > p {
+  display: inline-block;
+  max-width: 33vw;
+  margin: 20px 0 40px 0;
+
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.middle-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  width: 24rem;
+  height: 18rem;
+
+  padding: 2rem;
+
+  border-top: 5px solid black;
+  border-radius: 8px;
+  box-shadow: 0 0 20px hsl(234, 12%, 34%, 30%);
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card > img {
+  margin-top: auto;
+  align-self: flex-end;
+
+  height: 80px;
+  width: 80px;
+}
+
+.card > h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.card > p {
+  margin: 0;
+}
+
+/*card top colors*/
+#card1 {
+  border-color: hsl(180, 62%, 55%);
+}
+
+#card2 {
+  border-color: hsl(0, 78%, 62%);
+}
+
+#card3 {
+  border-color: hsl(34, 97%, 64%);
+}
+
+#card4 {
+  border-color: hsl(212, 86%, 64%);
+}
+
+@media (max-width: 1175px) {
+  main {
+    padding: 2rem;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main > p {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card > img {
+    width: 50px;
+    height: 50px;
+  }
+}
