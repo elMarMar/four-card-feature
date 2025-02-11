@@ -15,6 +15,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: hsl(0, 0%, 98%);
 }
@@ -24,8 +27,9 @@ body * {
 }
 
 main {
-  min-height: 100vh;
-
+  flex-grow: 1; /*allows growth*/
+  flex-shrink: 1; /*allows shrinkage*/
+  flex-basis: 0; /*Sets the starting size to 0, meaning the item relies fully on flex-grow to size itself.*/
   display: flex;
   flex-direction: column;
   justify-content: center;
